@@ -1,0 +1,17 @@
+Todo o investimento informado tem vantagem sobre investimento cego.
+A ilha terceira vive de mercados como Turismos, Retalho, Imobiliário, Venda de Carros…
+E a maioria destes mercados têm forte presença em plataformas conhecidas.
+
+A ideia é desenvolver um centro de inteligência composta por 3 partes:
+
+1- Scrape inteligente -> Dado o mercado -> Extrair de features importantes: Carros(km,ano,revisão,inspeção,estado do carro(Usar AI-CNN)) Casas(m2, preço por m2, estado exterior, estado interior...) Alojamento local(A titulo de comparação de mercado) de plataformas conhecidas.
+2- Mapeamento de histórico de transações
+3- Correlação com estado da economia e ajustes à inflação.
+
+
+1. O "Santo Graal" dos Dados Oficiais: Infocasa / DGT (Dados Gratuitos)
+O que procurar: Portais de dados abertos do Governo (como o Dados.gov.pt) ou relatórios do INE (Instituto Nacional de Estatística). Eles fornecem séries temporais históricas com o preço médio por metro quadrado descido ao nível do concelho (Praia da Vitória e Angra do Heroísmo) e, por vezes, por freguesia.
+
+2. A Máquina do Tempo da Internet: Wayback Machine (Internet Archive)
+Como funciona: Existe uma biblioteca open-source em Python chamada waybackpy ou ferramentas no GitHub como o wayback-machine-downloader.A Estratégia: Pode programar um script para aceder às versões de 2022, 2023, 2024 e 2025 dos links de pesquisa do OLX ou de imobiliárias locais focadas nos Açores. O robô lê essas páginas estáticas do passado e extrai os preços que eram praticados na altura em Fontinhas ou arredores.
+
